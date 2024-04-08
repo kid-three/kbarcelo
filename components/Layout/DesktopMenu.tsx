@@ -24,26 +24,26 @@ const DesktopMenu = () => {
           className={`desktop_link ${pathname === "/" ? "active" : ""}`}
           href='/'
         >
-          hello
+          _hello
         </Link>
         <Link
           className={`desktop_link ${pathname === "/about_me" ? "active" : ""}`}
           href='/about_me'
         >
-          about_me
+          _bout_me
         </Link>
         <Link
           className={`desktop_link ${pathname === "/projects" ? "active" : ""}`}
           href='/projects'
         >
-          projects
+          _projects
         </Link>
       </Flex>
       <Link
         className={`desktop_link ${pathname === "/contact_me" ? "active" : ""}`}
         href='/contact_me'
       >
-        contact_me
+        _contact_me
       </Link>
     </Flex>
   );

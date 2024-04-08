@@ -88,16 +88,8 @@ body {
 }
 
 .home {
-  background: radial-gradient(
-      farthest-side at center center,
-      #4d5cce4b,
-      transparent 400px
-    ),
-    radial-gradient(
-      farthest-corner at center right,
-      #43d9ac46,
-      transparent 600px
-    );
+  background: radial-gradient(circle at 76% 50%, #4d5cce3b 0%, #ee82ee00 24%),
+    radial-gradient(circle at 59% 37%, #43d9ac15 0%, #ee82ee00 37%);
   height: 100%;
 }
 
@@ -141,4 +133,12 @@ body {
 .desktop_footer {
   border-top: var(--gray-5) 1px solid;
   color: #607b96 !important;
+}
+
+.home_content {
+  color: #f6f6f6d4 !important;
+}
+
+.software {
+  color: #43d9ad;
 }
