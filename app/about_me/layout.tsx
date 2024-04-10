@@ -1,10 +1,20 @@
 "use client";
 import * as Accordion from "@radix-ui/react-accordion";
-import { TriangleRightIcon, FileTextIcon } from "@radix-ui/react-icons";
+import {
+  TriangleRightIcon,
+  FileTextIcon,
+  PersonIcon,
+  BackpackIcon,
+  StarIcon,
+  Share2Icon,
+  Share1Icon,
+} from "@radix-ui/react-icons";
 import { Flex, Heading, Box } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
+import MainAccordion from "@/components/about_me/Accordion";
+import { useMediaQuery } from "react-responsive";
 
 const aboutMeLayout = ({
   children,
@@ -13,99 +23,60 @@ const aboutMeLayout = ({
 }>) => {
   const pathname = usePathname();
 
-  return (
-    <Flex direction='column' className='about_me'>
-      <Flex align='center' m='5'>
-        <Heading size='6' weight='regular' className='page_title'>
-          _about_me
-        </Heading>
+  const useDesktopMediaQuery = () =>
+    useMediaQuery({ query: "(min-width: 800px)" });
+
+  if (!useDesktopMediaQuery()) {
+    return (
+      <Flex direction='column' className='about_me'>
+        <Flex align='center' m='5'>
+          <Heading size='6' weight='regular' className='page_title'>
+            _about_me
+          </Heading>
+        </Flex>
+        <Box>
+          <MainAccordion />
+        </Box>
+        {children}
       </Flex>
-      <Box>
-        <Accordion.Root
-          className='AccordionRoot'
-          type='single'
-          collapsible={true}
-          defaultValue='item-1'
-        >
-          <Accordion.Item value='item-1'>
-            <Accordion.Header className='AccordionHeader'>
-              <Accordion.Trigger className='AccordionTrigger'>
-                <TriangleRightIcon
-                  className='AccordionChevron'
-                  aria-hidden
-                  width={20}
-                  height={20}
-                />
-                <span>personal-information</span>
-              </Accordion.Trigger>
-            </Accordion.Header>
-            <Accordion.Content className='AccordionContent'>
-              <div className='AccordionContentText'>
-                <Link href='/about_me/bio'>
-                  <button
-                    className={`AccordionInnerButton ${
-                      pathname === "/about_me/bio" ? "selected" : ""
-                    }`}
-                  >
-                    <FileTextIcon width={20} height={20} color='#43d9ad' /> bio
-                  </button>
-                </Link>
-                <Link href='/about_me/personal_interests'>
-                  <button
-                    className={`AccordionInnerButton ${
-                      pathname === "/about_me/personal_interests"
-                        ? "selected"
-                        : ""
-                    }`}
-                  >
-                    <FileTextIcon width={20} height={20} color='#E99287' />{" "}
-                    personal interest
-                  </button>
-                </Link>
-                <Link href='/about_me/education'>
-                  <button
-                    className={`AccordionInnerButton ${
-                      pathname === "/about_me/education" ? "selected" : ""
-                    }`}
-                  >
-                    <FileTextIcon width={20} height={20} color='#3A49A4' />{" "}
-                    education
-                  </button>
-                </Link>
-              </div>
-            </Accordion.Content>
-          </Accordion.Item>
-          <Accordion.Item value='item-2'>
-            <Accordion.Header className='AccordionHeader'>
-              <Accordion.Trigger className='AccordionTrigger'>
-                <TriangleRightIcon
-                  className='AccordionChevron'
-                  aria-hidden
-                  width={20}
-                  height={20}
-                />
-                <span>hobbies</span>
-              </Accordion.Trigger>
-            </Accordion.Header>
-            <Accordion.Content className='AccordionContent'>
-              <div className='AccordionContentText'>
-                <button className='AccordionInnerButton'>
-                  <FileTextIcon width={20} height={20} color='#43d9ad' /> bio
-                </button>
-                <button className='AccordionInnerButton'>
-                  <FileTextIcon width={20} height={20} color='#E99287' />{" "}
-                  personal interest
-                </button>
-                <button className='AccordionInnerButton'>
-                  <FileTextIcon width={20} height={20} color='#3A49A4' />{" "}
-                  education
-                </button>
-              </div>
-            </Accordion.Content>
-          </Accordion.Item>
-        </Accordion.Root>
-      </Box>
-      {children}
+    );
+  }
+
+  return (
+    <Flex height='100%'>
+      <Flex direction='column' className='icon_column' width='40px'>
+        <Flex align='center' py='3' px='2'>
+          <PersonIcon width='20px' height='20px' color='white' />
+        </Flex>
+
+        <Flex align='center' py='3' px='2'>
+          <Share1Icon width='20px' height='20px' />
+        </Flex>
+        <Flex align='center' py='3' px='2'>
+          <StarIcon width='20px' height='20px' />
+        </Flex>
+      </Flex>
+      <Flex direction='column' width='269px' className='accordion_column'>
+        <MainAccordion />
+      </Flex>
+      <Flex className='page_main_content'>
+        <Flex width='50%' className='page_main_content_children'>
+          {children}
+        </Flex>
+        <Flex width='50%'>
+          <Box p='4'>
+            <Heading size='4' weight='regular' className='section_title'>
+              // code snippets
+            </Heading>
+            <Box mt='3'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              eligendi ut praesentium soluta id quia nemo quibusdam commodi
+              nulla reiciendis, voluptate dicta repudiandae deserunt quaerat
+              adipisci ullam sit a nihil!
+            </Box>
+          </Box>
+        </Flex>
+      </Flex>
     </Flex>
   );
 };

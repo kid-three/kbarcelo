@@ -7,19 +7,13 @@ import Link from "next/link";
 import Footer from "./Footer";
 
 const DesktopFooter = () => {
-  const useDesktopMediaQuery = () =>
-    useMediaQuery({ query: "(min-width: 800px)" });
-
-  if (!useDesktopMediaQuery()) {
-    return null;
-  }
-
   return (
     <Flex
       height='3rem'
       justify='between'
       className='desktop_footer'
       align='center'
+      display={{ initial: "none", lg: "flex" }}
     >
       <Flex height='100%'>
         <Flex align='center' mx='2'>

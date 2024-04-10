@@ -1,4 +1,5 @@
 "use client";
+import { LightningBoltIcon } from "@radix-ui/react-icons";
 import { Flex, Text, Button, Container, Box } from "@radix-ui/themes";
 import Link from "next/link";
 import { RandomReveal } from "react-random-reveal";
@@ -30,9 +31,17 @@ export default function Home() {
         </Text>
         <br />
         <Text size='5' className='software'>
-          {" > Front-end Developer"}
+          {" > Senoir Front-End Developer"}
         </Text>
-        <Box mt='9'>sds</Box>
+        <br />
+        <Text size='5' className='manager'>
+          {" > Tech Manager"}
+        </Text>
+        <br />
+        <Text size='5' className='skater'>
+          {" > Skater"}
+        </Text>
+        <Box mt='9'></Box>
       </Box>
       <Box></Box>
     </Flex>

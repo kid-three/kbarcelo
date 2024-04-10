@@ -26,17 +26,6 @@ const aboutMe = () => {
           ullam sit a nihil!
         </Box>
       </Box>
-      <Box p='4'>
-        <Heading size='4' weight='regular' className='section_title'>
-          // code snippets
-        </Heading>
-        <Box mt='3'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-          eligendi ut praesentium soluta id quia nemo quibusdam commodi nulla
-          reiciendis, voluptate dicta repudiandae deserunt quaerat adipisci
-          ullam sit a nihil!
-        </Box>
-      </Box>
     </Flex>
   );
 };

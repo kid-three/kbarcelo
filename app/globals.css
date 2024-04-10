@@ -49,6 +49,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border-left: var(--gray-5) 1px solid;
+  z-index: 999;
 }
 
 .mobile_menu_list {
@@ -64,6 +65,9 @@ body {
   padding: var(--space-4);
   border-bottom: var(--gray-5) 1px solid;
 }
+.mobile_menu_list li:active {
+  background-color: #1e2d3d;
+}
 
 .nav {
   border-bottom: var(--gray-5) 1px solid;
@@ -72,7 +76,7 @@ body {
 .nav_name {
   margin-left: 0.5rem;
   text-decoration: none;
-  min-width: 250px;
+  min-width: 300px;
 }
 
 .nav_name:hover {
@@ -124,6 +128,9 @@ body {
 .desktop_link:last-child {
   border-right: var(--gray-5) 1px solid;
 }
+.desktop_link:hover {
+  color: #f6f6f6 !important;
+}
 
 .active {
   border-bottom: var(--amber-indicator) 3px solid !important;
@@ -141,6 +148,12 @@ body {
 
 .software {
   color: #43d9ad;
+}
+.manager {
+  color: var(--amber-a9);
+}
+.skater {
+  color: #4d5cce;
 }
 
 h3,
@@ -162,7 +175,7 @@ button {
 .AccordionItem:focus-within {
   position: relative;
   z-index: 1;
-  /* box-shadow: 0 0 0 2px var(--mauve-12); */
+  box-shadow: 0 0 0 2px var(--mauve-12);
 }
 
 .AccordionHeader {
@@ -186,10 +199,11 @@ button {
   width: 100%;
   background-color: #1e2d3d;
   border-radius: 0;
-  margin: 0;
+  /* margin: 0; */
+  margin-bottom: 3px;
 
   /* padding: 0.4rem 0.7rem; */
-  border-bottom: 3px solid #011627;
+  /* border-bottom: 3px solid #011627; */
   /* border-bottom: 3px solid transparent; */
   gap: 0.56em;
   font-size: 16px;
@@ -276,4 +290,20 @@ button {
 
 .section_title {
   color: #f6f6f6d4;
+}
+
+.icon_column {
+  border-right: 1px solid var(--gray-5);
+}
+
+.accordion_column {
+  border-right: 1px solid var(--gray-5);
+}
+
+.page_main_content {
+  flex: 1;
+}
+
+.page_main_content_children {
+  border-right: 1px solid var(--gray-5);
 }

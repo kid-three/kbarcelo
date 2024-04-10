@@ -1,28 +1,26 @@
 "use client";
 import { Flex, Box, Heading } from "@radix-ui/themes";
 import React, { ReactElement, ReactNode } from "react";
-import Header from "./Header";
 import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const DesktopMenu = () => {
-  const useDesktopMediaQuery = () =>
-    useMediaQuery({ query: "(min-width: 800px)" });
-
-  if (!useDesktopMediaQuery()) {
-    return null;
-  }
-
   const pathname = usePathname();
 
   return (
-    <Flex height='2.5rem' justify='between' className='desktop_header'>
+    <Flex
+      height='2.5rem'
+      justify='between'
+      className='desktop_header'
+      display={{ initial: "none", lg: "flex" }}
+    >
       <Flex height='100%' align='center'>
-        <Heading size='4' weight='regular' className='nav_name' asChild>
-          <Link href='/'>kinich_barcelo </Link>
-        </Heading>
-
+        <Link href='/'>
+          <Heading size='4' weight='regular' className='nav_name'>
+            kinich_barcelo
+          </Heading>
+        </Link>
         <Link
           className={`desktop_link ${pathname === "/" ? "active" : ""}`}
           href='/'
@@ -30,10 +28,12 @@ const DesktopMenu = () => {
           _hello
         </Link>
         <Link
-          className={`desktop_link ${pathname === "/about_me" ? "active" : ""}`}
+          className={`desktop_link ${
+            pathname.includes("/about_me") ? "active" : ""
+          }`}
           href='/about_me'
         >
-          _bout_me
+          _about_me
         </Link>
         <Link
           className={`desktop_link ${pathname === "/projects" ? "active" : ""}`}

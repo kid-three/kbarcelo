@@ -11,9 +11,6 @@ import { usePathname } from "next/navigation";
 import Name from "./Name";
 
 const MobileMenu = () => {
-  const useDesktopMediaQuery = () =>
-    useMediaQuery({ query: "(min-width: 800px)" });
-
   const pathname = usePathname();
 
   const [open, setOpen] = useState(false);
@@ -26,10 +23,6 @@ const MobileMenu = () => {
     setOpen(false);
   };
 
-  if (useDesktopMediaQuery()) {
-    return null;
-  }
-
   return (
     <Flex
       justify='between'
@@ -37,6 +30,7 @@ const MobileMenu = () => {
       height='3rem'
       position='relative'
       className='nav'
+      display={{ initial: "flex", lg: "none" }}
     >
       <Name closeMenu={closeMenu} />
       <Flex onClick={isOpen} mr='2'>
@@ -84,36 +78,36 @@ const MobileMenu = () => {
             <Box>
               <ul className='mobile_menu_list' onClick={closeMenu}>
                 <Link href='/'>
-                  <motion.li
-                    whileTap={{ scale: 0.9 }}
-                    // className={` ${pathname === "/" ? "active" : ""}`}
+                  <li
+
+                  // className={` ${pathname === "/" ? "active" : ""}`}
                   >
                     _hello
-                  </motion.li>
+                  </li>
                 </Link>
-                <Link href='/about_me'>
-                  <motion.li
-                    whileTap={{ scale: 0.9 }}
-                    className={` ${pathname === "/about_me" ? "active" : ""}`}
+                <Link href='/about_me/bio'>
+                  <li
+                    className={`${
+                      pathname.includes("/about_me") ? "active" : ""
+                    }`}
+                    // className={` ${pathname === "/about_me" ? "active" : ""}`}
                   >
                     _about_me
-                  </motion.li>
+                  </li>
                 </Link>
                 <Link href='/projects'>
-                  <motion.li
-                    whileTap={{ scale: 0.9 }}
+                  <li
                     className={` ${pathname === "/projects" ? "active" : ""}`}
                   >
                     _projects
-                  </motion.li>
+                  </li>
                 </Link>
                 <Link href='/contact_me'>
-                  <motion.li
-                    whileTap={{ scale: 0.9 }}
+                  <li
                     className={` ${pathname === "/contact_me" ? "active" : ""}`}
                   >
                     _contact_me
-                  </motion.li>
+                  </li>
                 </Link>
               </ul>
             </Box>
