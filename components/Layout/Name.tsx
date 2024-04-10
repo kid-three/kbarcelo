@@ -1,11 +1,11 @@
 import { Heading } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";
-interface HeaderProps {
+interface NameProps {
   closeMenu: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ closeMenu }) => {
+const Name: React.FC<NameProps> = ({ closeMenu }) => {
   return (
     <Heading
       size='4'
@@ -19,4 +19,4 @@ const Header: React.FC<HeaderProps> = ({ closeMenu }) => {
   );
 };
 
-export default Header;
+export default Name;

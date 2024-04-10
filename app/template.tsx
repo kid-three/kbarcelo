@@ -8,14 +8,14 @@ const variants = {
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
-    <motion.main
-      variants={variants}
-      initial='hidden'
-      animate='enter'
-      transition={{ type: "linear" }}
-      style={{ height: "100%" }}
-    >
-      {children}
-    </motion.main>
+    // <motion.main
+    //   variants={variants}
+    //   initial='hidden'
+    //   animate='enter'
+    //   transition={{ type: "linear" }}
+    //   style={{ height: "100%" }}
+    // >
+    <>{children}</>
+    // </motion.main>
   );
 }

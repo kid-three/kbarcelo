@@ -1,18 +1,8 @@
-"use client";
-
-import { Flex, Heading, Box } from "@radix-ui/themes";
 import React from "react";
 
-import * as Accordion from "@radix-ui/react-accordion";
-import {
-  ArrowBottomRightIcon,
-  ChevronDownIcon,
-  FileTextIcon,
-  TriangleDownIcon,
-  TriangleRightIcon,
-} from "@radix-ui/react-icons";
+import { Flex, Heading, Box } from "@radix-ui/themes";
 
-const aboutMe = () => {
+const page = () => {
   return (
     <Flex>
       <Box p='4'>
@@ -20,10 +10,8 @@ const aboutMe = () => {
           // personal info <span> / bio</span>
         </Heading>
         <Box mt='3'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-          eligendi ut praesentium soluta id quia nemo quibusdam commodi nulla
-          reiciendis, voluptate dicta repudiandae deserunt quaerat adipisci
-          ullam sit a nihil!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eerunt
+          quaerat adipisci ullam sit a nihil!
         </Box>
       </Box>
       <Box p='4'>
@@ -41,4 +29,4 @@ const aboutMe = () => {
   );
 };
 
-export default aboutMe;
+export default page;

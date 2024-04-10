@@ -4,10 +4,11 @@ import { relative } from "path";
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { motion, AnimatePresence } from "framer-motion";
-import Header from "./Header";
+
 import Link from "next/link";
 import Footer from "./Footer";
 import { usePathname } from "next/navigation";
+import Name from "./Name";
 
 const MobileMenu = () => {
   const useDesktopMediaQuery = () =>
@@ -37,7 +38,7 @@ const MobileMenu = () => {
       position='relative'
       className='nav'
     >
-      <Header closeMenu={closeMenu} />
+      <Name closeMenu={closeMenu} />
       <Flex onClick={isOpen} mr='2'>
         {!open ? (
           <svg

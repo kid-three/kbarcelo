@@ -1,5 +1,5 @@
 "use client";
-import { Flex, Box } from "@radix-ui/themes";
+import { Flex, Box, Heading } from "@radix-ui/themes";
 import React, { ReactElement, ReactNode } from "react";
 import Header from "./Header";
 import { useMediaQuery } from "react-responsive";
@@ -19,7 +19,10 @@ const DesktopMenu = () => {
   return (
     <Flex height='2.5rem' justify='between' className='desktop_header'>
       <Flex height='100%' align='center'>
-        <Header />
+        <Heading size='4' weight='regular' className='nav_name' asChild>
+          <Link href='/'>kinich_barcelo </Link>
+        </Heading>
+
         <Link
           className={`desktop_link ${pathname === "/" ? "active" : ""}`}
           href='/'

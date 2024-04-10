@@ -1,7 +1,7 @@
 "use client";
 import { Flex, Box } from "@radix-ui/themes";
 import React, { ReactElement, ReactNode } from "react";
-import Header from "./Header";
+import Header from "./Name";
 import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
 import Footer from "./Footer";

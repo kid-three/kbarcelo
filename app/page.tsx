@@ -18,7 +18,9 @@ export default function Home() {
             characters='Kinich'
             onComplete={() => ({ shouldRepeat: true, delay: 20 })}
           />
-          <br />
+        </Text>
+        <br />
+        <Text size='9' weight='regular'>
           <RandomReveal
             isPlaying
             duration={3}
