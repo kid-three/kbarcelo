@@ -20,8 +20,8 @@ const DesktopFooter = () => {
           Find me in:
         </Flex>
         <Flex align='center' height='100%'>
-          <Flex align='center' className='social_links_desktop'>
-            <Link href='/' style={{ lineHeight: 0 }}>
+          <Flex align='center' className='social_links_desktop' id="linkedIn">
+            <Link target="_blank" href='https://www.linkedin.com/in/kinich-barcelo-0b912ba0/' style={{ lineHeight: 0 }}>
               <svg
                 width='20'
                 height='20'
@@ -38,9 +38,9 @@ const DesktopFooter = () => {
               </svg>
             </Link>
           </Flex>
-          <Flex align='center' className='social_links_desktop'>
-            <Link href='/' style={{ lineHeight: 0 }}>
-              <svg
+          {/* <Flex align='center' className='social_links_desktop' id="github">
+            <Link href='https://github.com/kid-three' target="_blank" style={{ lineHeight: 0 }}>
+            <svg
                 width='20'
                 height='20'
                 viewBox='0 0 15 15'
@@ -55,11 +55,11 @@ const DesktopFooter = () => {
                 ></path>
               </svg>
             </Link>
-          </Flex>
+          </Flex> */}
         </Flex>
       </Flex>
       <Flex className='desktop_link'>
-        <Link href='/' style={{ lineHeight: 0 }}>
+        <Link href='https://github.com/kid-three' target="_blank" style={{ lineHeight: 0 }}>
           <svg
             width='15'
             height='15'
@@ -74,7 +74,7 @@ const DesktopFooter = () => {
               clipRule='evenodd'
             ></path>
           </svg>
-          kidThree
+           {" "}kid-three
         </Link>
       </Flex>
     </Flex>

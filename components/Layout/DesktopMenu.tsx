@@ -31,7 +31,7 @@ const DesktopMenu = () => {
           className={`desktop_link ${
             pathname.includes("/about_me") ? "active" : ""
           }`}
-          href='/about_me'
+          href='/about_me/bio'
         >
           _about_me
         </Link>

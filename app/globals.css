@@ -28,7 +28,7 @@ body {
 }
 
 .main_container {
-  height: 100vh;
+  height: 100dvh;
 }
 
 .page_container {
@@ -43,8 +43,8 @@ body {
   position: absolute;
   background-color: #011627;
   top: 2.8rem;
-  width: 900%;
-  height: calc(100vh - 2.5rem - var(--space-3) * 2);
+  width: 100%;
+  height: calc(100dvh - 2.5rem - var(--space-3) * 2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -92,8 +92,8 @@ body {
 }
 
 .home {
-  background: radial-gradient(circle at 76% 50%, #4d5cce3b 0%, #ee82ee00 24%),
-    radial-gradient(circle at 59% 37%, #43d9ac15 0%, #ee82ee00 37%);
+  background: radial-gradient(circle at 76% 20%, #4d5cce3b 0%, #ee82ee00 24%),
+    radial-gradient(circle at 59% 30%, #43d9ac15 0%, #ee82ee00 37%);
   height: 100%;
 }
 
@@ -149,6 +149,7 @@ body {
 .software {
   color: #43d9ad;
 }
+
 .manager {
   color: var(--amber-a9);
 }

@@ -3,21 +3,39 @@ import ImageEffect from "@/components/home/ImageEffect";
 import Example from "@/components/home/p5";
 import { LightningBoltIcon } from "@radix-ui/react-icons";
 import { Flex, Text, Button, Container, Box } from "@radix-ui/themes";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import { RandomReveal } from "react-random-reveal";
 
 export default function Home() {
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
   return (
-    <Flex className='home' height='100%' align='center'>
-      <Box className='home_content' p='6'>
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    style={{height: '100%'}}
+  >
+    <Flex className='home' height='100%' align={{initial:"start", lg:"center"}}>
+      <Box className='home_content' p={{ initial: '4', lg: '6' }} mt={{initial:'6', lg:'0'}}>
         <Text size='3' weight='light'>
           Hello world, I'm
         </Text>
         <br />
+        {isMounted && (
+          <>
         <Text size='9' weight='regular'>
           <RandomReveal
             isPlaying
-            duration={2}
+            duration={0.5}
             characters='Kinich'
             onComplete={() => ({ shouldRepeat: true, delay: 20 })}
           />
@@ -26,14 +44,16 @@ export default function Home() {
         <Text size='9' weight='regular'>
           <RandomReveal
             isPlaying
-            duration={3}
+            duration={1}
             characters='Barceló'
             onComplete={() => ({ shouldRepeat: true, delay: 20 })}
           />
         </Text>
-        <br />
+        </>
+        )}
+        <Box mt="4">
         <Text size='5' className='software'>
-          {" > Senoir Front-End Developer"}
+          {" > Sr Front-End Developer"}
         </Text>
         <br />
         <Text size='5' className='manager'>
@@ -54,12 +74,11 @@ export default function Home() {
             />
           </svg> */}
         </Text>
+        </Box>
         <Box mt='9'></Box>
       </Box>
-      <Box width='100%' height='100%'>
-        {/* <ImageEffect /> */}
-        <Example />
-      </Box>
+      
     </Flex>
+    </motion.div>
   );
 }
