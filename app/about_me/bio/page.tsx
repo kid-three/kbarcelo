@@ -5,7 +5,11 @@ import { Flex, Heading, Box, Text } from "@radix-ui/themes";
 const page = () => {
   return (
     <Flex>
-      <Box
+        <Flex width={{
+          initial:"100%",
+          lg: "50%"
+        }} className='page_main_content_children'>
+        <Box
         p={{
           initial: "4",
           lg: "8",
@@ -17,51 +21,38 @@ const page = () => {
         </Heading>
         <Box mt='3'>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-            consequuntur distinctio tempore? Consequatur beatae harum maiores
-            perspiciatis? Provident vero iusto blanditiis odit, consequuntur
-            iste repellat sunt a architecto! Hic praesentium maiores doloremque
-            ut nulla sunt dolores beatae quo dolor temporibus recusandae, rerum
-            blanditiis. Quibusdam perferendis rerum culpa corporis sapiente
-            officiis dolore modi, dicta a illo! A voluptatibus voluptate sit.
-            Nam dolorem ducimus voluptas, nemo rerum corporis, officiis tempora,
-            est commodi excepturi nobis assumenda! Quia voluptate libero dolores
-            dolorem iusto maxime quas quae! Accusantium eaque fugiat perferendis
-            impedit blanditiis expedita, iure perspiciatis dolores vero, velit
-            consequuntur ipsa sed, unde ratione maxime?
-          </Text>
-          <Text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-            consequuntur distinctio tempore? Consequatur beatae harum maiores
-            perspiciatis? Provident vero iusto blanditiis odit, consequuntur
-            iste repellat sunt a architecto! Hic praesentium maiores doloremque
-            ut nulla sunt dolores beatae quo dolor temporibus recusandae, rerum
-            blanditiis. Quibusdam perferendis rerum culpa corporis sapiente
-            officiis dolore modi, dicta a illo! A voluptatibus voluptate sit.
-            Nam dolorem ducimus voluptas, nemo rerum corporis, officiis tempora,
-            est commodi excepturi nobis assumenda! Quia voluptate libero dolores
-            dolorem iusto maxime quas quae! Accusantium eaque fugiat perferendis
-            impedit blanditiis expedita, iure perspiciatis dolores vero, velit
-            consequuntur ipsa sed, unde ratione maxime?
-          </Text>
-          <Text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-            consequuntur distinctio tempore? Consequatur beatae harum maiores
-            perspiciatis? Provident vero iusto blanditiis odit, consequuntur
-            iste repellat sunt a architecto! Hic praesentium maiores doloremque
-            ut nulla sunt dolores beatae quo dolor temporibus recusandae, rerum
-            blanditiis. Quibusdam perferendis rerum culpa corporis sapiente
-            officiis dolore modi, dicta a illo! A voluptatibus voluptate sit.
-            Nam dolorem ducimus voluptas, nemo rerum corporis, officiis tempora,
-            est commodi excepturi nobis assumenda! Quia voluptate libero dolores
-            dolorem iusto maxime quas quae! Accusantium eaque fugiat perferendis
-            impedit blanditiis expedita, iure perspiciatis dolores vero, velit
-            consequuntur ipsa sed, unde ratione maxime?
+          I'm a seasoned Engineering Manager and Senior Front End Developer with 10 years of experience leading talented teams to achieve their best.
+          <br/>
+          <br/>
+          I've successfully managed remote teams of up to 40 people, ensuring that we stay connected and productive no matter where we are. 
+          <br/>
+          <br/>
+           I focus on aligning our projects with business goals while supporting my team in their professional growth. I believe in maintaining a collaborative and welcoming environment, where creativity and innovation can thrive. 
+           <br/>
+           <br/>
+           Outside of work, you'll often find me skateboarding—it's my favorite way to stay active and keep a fresh perspective.
           </Text>
         </Box>
       </Box>
+        </Flex>
+        <Flex width='50%' display={{
+          initial: 'none',
+          lg: 'flex'
+        }}>
+          <Box p='4'>
+            <Heading size='4' weight='regular' className='section_title'>
+              // code snippets
+            </Heading>
+            <Box mt='3'>
+            !
+            </Box>
+          </Box>
+        </Flex>
+    
     </Flex>
   );
 };
 
 export default page;
+
+

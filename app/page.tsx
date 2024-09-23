@@ -1,7 +1,7 @@
 "use client";
-import ImageEffect from "@/components/home/ImageEffect";
-import Example from "@/components/home/p5";
-import { LightningBoltIcon } from "@radix-ui/react-icons";
+// import ImageEffect from "@/components/home/ImageEffect";
+// import Example from "@/components/home/p5";
+// import { LightningBoltIcon } from "@radix-ui/react-icons";
 import { Flex, Text, Button, Container, Box } from "@radix-ui/themes";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -52,7 +52,7 @@ export default function Home() {
         </>
         )}
         <Box mt="4">
-        <Text size='5' className='software'>
+        <Text size='5' className='software '>
           {" > Sr Front-End Developer"}
         </Text>
         <br />
