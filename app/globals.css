@@ -163,9 +163,10 @@ button {
 }
 
 .AccordionRoot {
-  border-radius: 6px;
+  /* border-radius: 6px; */
   /* width: 300px; */
   width: 100%;
+  border-bottom: 1px solid var(--gray-5);
 }
 
 .AccordionItem {
@@ -342,4 +343,15 @@ br {
 .credential_link {
   color: #f6f6f6 !important;
   text-decoration: underline !important;
+}
+
+.project_card_container {
+  /* border: 1px solid var(--gray-5); */
+  padding: 1rem;
+  width: 330px;
+}
+
+.project_number {
+  color: #5565e8;
+  font-weight: bold;
 }
