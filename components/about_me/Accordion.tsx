@@ -107,10 +107,10 @@ const MainAccordion = () => {
               </button>
             </Link>
 
-            <button className="AccordionInnerButton">
+            {/* <button className="AccordionInnerButton">
               <LightningBoltIcon width={20} height={20} color="#E99287" /> Tech
               Literacy
-            </button>
+            </button> */}
             {/* <button className="AccordionInnerButton">
               <FileTextIcon width={20} height={20} color="#3A49A4" /> education
             </button> */}

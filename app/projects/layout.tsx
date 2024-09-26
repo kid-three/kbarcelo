@@ -15,7 +15,9 @@ import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import MainAccordion from '@/components/about_me/Accordion';
 import { useMediaQuery } from 'react-responsive';
-import ProjectsAccordion from '@/components/projects/Accordion';
+import ProjectsAccordion from '@/components/projects/ProjectAccordion';
+import ProjectCheckbox from '@/components/projects/ProjectCheckbox';
+import ProjectList from '@/components/projects/ProjectList';
 
 const ProjectsLayout = ({
   children,
@@ -24,6 +26,22 @@ const ProjectsLayout = ({
 }>) => {
   const pathname = usePathname();
   const [isMounted, setIsMounted] = useState(false);
+
+  const [selectedValues, setSelectedValues] = useState<string[]>([]);
+
+  const handleCheckboxChange = (value: string, checked: boolean) => {
+    setSelectedValues((prevSelectedValues) => {
+      if (checked) {
+        // Add the value to the selected values array
+        return [...prevSelectedValues, value];
+      } else {
+        // Remove the value from the selected values array
+        return prevSelectedValues.filter(
+          (selectedValue) => selectedValue !== value
+        );
+      }
+    });
+  };
 
   useEffect(() => {
     setIsMounted(true);
@@ -41,9 +59,12 @@ const ProjectsLayout = ({
           </Heading>
         </Flex>
         <Box>
-          <ProjectsAccordion />
+          <ProjectsAccordion
+            selectedValues={selectedValues}
+            handleCheckboxChange={handleCheckboxChange}
+          />
         </Box>
-        {children}
+        <ProjectList selectedTags={selectedValues} />
       </Flex>
     );
   }
@@ -51,10 +72,13 @@ const ProjectsLayout = ({
   return (
     <Flex height="100%">
       <Flex direction="column" width="269px" className="accordion_column">
-        <ProjectsAccordion />
+        <ProjectsAccordion
+          selectedValues={selectedValues}
+          handleCheckboxChange={handleCheckboxChange}
+        />
       </Flex>
       <Flex flexGrow="2" justify="center" overflowY="scroll" maxHeight="100%">
-        {children}
+        <ProjectList selectedTags={selectedValues} />
       </Flex>
     </Flex>
   );

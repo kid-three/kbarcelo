@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import Image from 'next/image';
+import Sk8 from '@/components/home/Sk8';
 
 const Skate = () => {
   return (
@@ -25,6 +26,22 @@ const Skate = () => {
           with skateboarding has been a powerful reminder that it's never too
           late to embrace past passions and let them fuel new possibilities.
         </Box>
+        <Flex
+          className="sk8"
+          overflow="hidden"
+          // align="center"
+          mt="2"
+          maxWidth={{
+            initial: '95%',
+            lg: '500px',
+          }}
+          maxHeight={{
+            initial: '300px',
+            lg: '500px',
+          }}
+        >
+          <Sk8 />
+        </Flex>
       </Box>
     </Flex>
   );
