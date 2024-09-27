@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 }
 
@@ -483,4 +485,97 @@ br {
   border-radius: 10px;
 
   box-shadow: 0 0 10px 0 rgba(9, 167, 194, 0.2);
+}
+
+.tm {
+  /* color: red;
+  border: 1px solid red; */
+  font-family: 'Raleway', sans-serif;
+}
+
+.tm_swiper {
+  width: 500px;
+  height: 650px;
+}
+
+@media (max-width: 480px) {
+  .tm_swiper {
+    width: 240px;
+    height: 320px;
+  }
+}
+
+.tm_swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #d5d5d5;
+  /* padding: 0.5rem; */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  /* background-color: #95a0a9; */
+  background: linear-gradient(0deg, #011627 0%, rgb(45, 49, 83) 100%);
+  background-image: url('/meta/env.svg');
+  background-size: cover;
+  background-position: center;
+  /* border: 1px solid #869baf; */
+
+  /* width: 100%;
+  height: 100%; */
+}
+
+#tree,
+#bridge,
+#idea,
+#anchor,
+#compass {
+  /* width: 100%; */
+  /* height: 100%; */
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.509));
+}
+
+#compass {
+  width: 90%;
+}
+
+.swiper-slide {
+}
+
+.tm_card {
+  /* border: #869baf 1px solid; */
+  /* margin: 1rem; */
+  height: 100%;
+  padding: 3%;
+  width: 100%;
+}
+
+.tm_card__content {
+  border-top: #869baf 2px solid;
+  border-bottom: #869baf 2px solid;
+  /* border-style: double; */
+  /* border-width: 1rem; */
+  border-radius: 20px;
+  /* margin: 1rem; */
+  /* height: 100%; */
+  padding: 1rem;
+
+  /* border: 5px solid yellow; */
+  outline: 1px solid #607b96;
+  outline-offset: -0.5rem;
+  justify-content: space-evenly !important;
+}
+
+.tm_card__title {
+  font-weight: 400;
+  /* font-size: 3rem; */
+  text-align: center;
+  border-top: #869baf 2px solid;
+  text-shadow: 3px 5px 5px #0000007b;
+}
+
+.tm_card__description {
+  font-weight: 100;
+  text-align: center;
 }

@@ -24,7 +24,7 @@ const Sk8 = () => {
       </SwiperSlide>
       <SwiperSlide>
         <video className="swiper-video" controls>
-          <source src="skateVid.mp4" type="video/mp4" />
+          <source src="/skateVid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </SwiperSlide>

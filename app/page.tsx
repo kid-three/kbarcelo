@@ -1,6 +1,7 @@
 'use client';
 import Typewriter from '@/components/home/CodeSnippet';
 import CodeSnippet from '@/components/home/CodeSnippet';
+import ManagerCards from '@/components/home/ManagerCards';
 import Sk8 from '@/components/home/Sk8';
 // import ImageEffect from "@/components/home/ImageEffect";
 // import Example from "@/components/home/p5";
@@ -155,7 +156,7 @@ export default function Home() {
         </Box>
         <Flex
           mt={{
-            initial: '4',
+            initial: '1',
             lg: '0',
           }}
           // justify={{
@@ -175,12 +176,22 @@ export default function Home() {
           }}
         >
           {' '}
-          {selected === 'FE' && (
-            <>
-              <Typewriter text={codeSnippet} />
-            </>
+          {selected === 'FE' && <Typewriter text={codeSnippet} />}
+          {selected === 'TM' && (
+            <Box
+              className="tm"
+              // overflow="hidden"
+              // align="center"
+              // height="500px"
+              // width="500px"
+              // px="5rem"
+              py="1"
+              // m="6"
+            >
+              // leadership and management skills
+              <ManagerCards />{' '}
+            </Box>
           )}
-          {selected === 'TM' && <p>tm</p>}
           {selected === 'SK8' && (
             <Flex
               className="sk8"
