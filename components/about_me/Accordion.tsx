@@ -97,7 +97,7 @@ const MainAccordion = () => {
                 }`}
               >
                 <Image
-                  src="/sport.svg"
+                  src="/kbarcelo/sport.svg"
                   width={20}
                   height={20}
                   alt="skate"

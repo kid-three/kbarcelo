@@ -51,7 +51,7 @@ const Contact = () => {
         </Box>
       </Box>
       <Image
-        src="/me2.png"
+        src="/kbarcelo/me2.png"
         width="300"
         height="300"
         className="me"

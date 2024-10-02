@@ -209,8 +209,8 @@ export default function Home() {
               }}
             >
               <VideoPlayer
-                thumbnail="/mefly.png"
-                videoSrc="/skateVid.mp4"
+                thumbnail="/kbarcelo/mefly.png"
+                videoSrc="/kbarcelo/skateVid.mp4"
                 alt="sk8"
               />
             </Flex>

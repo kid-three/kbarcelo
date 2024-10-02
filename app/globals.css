@@ -515,9 +515,9 @@ br {
   color: #d5d5d5;
   /* padding: 0.5rem; */
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-  /* background-color: #95a0a9; */
+  background-color: black;
   background: linear-gradient(0deg, #011627 0%, rgb(45, 49, 83) 100%);
-  background-image: url('/meta/env.svg');
+  background-image: url('/kbarcelo/meta/env.svg');
   background-size: cover;
   background-position: center;
   /* border: 1px solid #869baf; */
