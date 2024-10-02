@@ -6,7 +6,9 @@
     "projectNumber": 1,
     "projectTitle": "the_north_face MX",
     "shortDescription": "First VtexIO website for Ecomsur. Introduced use of GIT and React technologies to the entire Front End division as a SR Front End developer. 2020 - 2023",
-    "projectDescription": "As a Senior Front End Developer, I led the development of the first VtexIO-powered website for Ecomsur from 2020 to 2023.\n\n This project marked a significant shift in our technical strategy, as I introduced and integrated the use of GIT and React technologies to the entire Front End division. By leveraging VtexIO, I was able to build a robust e-commerce platform that elevated our client's capabilities. \n\nThe adoption of React enhanced the user interface, making it more interactive and dynamic, while GIT allowed for more efficient version control and collaboration across the development team."
+    "projectDescription": "As a Senior Front End Developer, I led the development of the first VtexIO-powered website for Ecomsur from 2020 to 2023.\n\n This project marked a significant shift in our technical strategy, as I introduced and integrated the use of GIT and React technologies to the entire Front End division. By leveraging VtexIO, I was able to build a robust e-commerce platform that elevated our client's capabilities. \n\nThe adoption of React enhanced the user interface, making it more interactive and dynamic, while GIT allowed for more efficient version control and collaboration across the development team.",
+    "date": "2020 - 2023",
+    "company": "Ecomsur"
   },
   {
     "tag": ["ReactJS", "VtexIO"],
@@ -15,7 +17,9 @@
     "projectNumber": 1,
     "projectTitle": "pandora MX/CL/CO/PE/PA/AR",
     "shortDescription": "Developed the Front End for the entire LatAm ecommerce market for Pandora. Included two complete redesigns of the website simultaneously done in 5 countries. 2020 - 2024",
-    "projectDescription": "From 2020 to 2024, I spearheaded the development of the Front End for Pandora's entire LatAm e-commerce market. \n\n This endeavor included undertaking two comprehensive redesigns of the website, which were simultaneously implemented across five different countries. The project demanded a nuanced understanding of both global brand consistency and local market nuances to ensure a seamless and unified user experience. The redesigns involved modernizing the design aesthetics, improving user navigation, and optimizing performance across different devices to enhance customer engagement and conversion rates throughout the region."
+    "projectDescription": "From 2020 to 2024, I spearheaded the development of the Front End for Pandora's entire LatAm e-commerce market. \n\n This endeavor included undertaking two comprehensive redesigns of the website, which were simultaneously implemented across five different countries. The project demanded a nuanced understanding of both global brand consistency and local market nuances to ensure a seamless and unified user experience. The redesigns involved modernizing the design aesthetics, improving user navigation, and optimizing performance across different devices to enhance customer engagement and conversion rates throughout the region.",
+    "date": "2020 - 2024",
+    "company": "Ecomsur"
   },
   {
     "tag": [
@@ -31,7 +35,10 @@
     "projectNumber": 1,
     "projectTitle": "ISMA Platform",
     "projectDescription": "As a Technical Manager from 2023 to 2024, I singlehandedly designed and developed of an innovative platform designed to manage our extensive front end infrastructure, spanning over 2400 repositories.\n\n  This platform facilitates real-time tracking of releases, streamlines codebase component searches, and enables tagging and cataloging of components for enhanced reusability. \n\n Built with Next.js for robust front-end capabilities, GraphQL for efficient data querying, and Strapi for flexible content management, the platform is deployed on Azure Web Apps to ensure scalability and reliability. This tool significantly boosted productivity and provided the team with a centralized, user-friendly interface to manage and optimize front-end assets.",
-    "shortDescription": "Sole develoepr for a platform to help manage infrastructure and releases for more then 2400 repositories in over 120 different active projects. 2023-2024"
+    "shortDescription": "Sole developer for a platform to help manage infrastructure and releases for more then 2400 repositories in over 120 different active projects. 2023-2024",
+    "date": "2023 - 2024",
+    "company": "Infracommerce LatAm",
+    "repo": "https://github.com/kid-three/EKS"
   },
   {
     "tag": ["ReactJS", "NextJS", "UI / UX Design"],
@@ -40,6 +47,32 @@
     "projectNumber": 1,
     "projectTitle": "Isabel Gonzalez Psicologa Clinica",
     "projectDescription": "This project involved developing a comprehensive website for a psychologist in Mérida using Next.js and Strapi as a CMS for storing all the data.\n\n The site features static rendering for improved SEO and performance, enabling fast load times and enhanced search engine visibility. I conducted a custom UI/UX design using Figma that reflects the Clients professionalism and warmth. Additionally, I handled all the photography to ensure the visuals align with the design and content, providing an authentic and inviting online presence. \n\nThe website has been an effective tool for client engagement and practice growth since its launch in 2019.",
-    "shortDescription": "Custom design and development for a psychologist in Merida, Yucatan MX. 2018 - current"
+    "shortDescription": "Custom design and development for a psychologist in Merida, Yucatan MX. 2018 - current",
+    "date": "2018 - current",
+    "company": "Freelance",
+    "repo": "https://github.com/kid-three/isabel"
+  },
+  {
+    "tag": ["ReactJS", "NextJS", "UI / UX Design"],
+    "projectLink": "https://kbarcelo.com/",
+    "projectImage": "/projects/kbarcelo.png",
+    "projectNumber": 1,
+    "projectTitle": "Kbarcelo.com Personal Portfolio",
+    "shortDescription": "Personal portfolio built with NextJs to showcase my work and skills. NextJS, RadixUI, Custom CSS - 2024",
+    "projectDescription": "Completely custom made website from scratch to showcase my work and skills. I used NextJS for the front end with RadixUI for a headless CMS. All styling was done with CSS to keep the site as light as possible. Design credit to Yanka Deralova. 2024",
+    "date": "2024",
+    "company": "Personal",
+    "repo": "https://github.com/kid-three/kbarcelo"
+  },
+  {
+    "tag": ["ReactJS", "VtexIO", "NodeJS"],
+    "projectLink": "https://vans.mx/",
+    "projectImage": "/projects/vans.png",
+    "projectNumber": 1,
+    "projectTitle": "Vans MX",
+    "shortDescription": "Led team of 3 developers to build the first VtexIO website for Vans in Mexico. Including House of Vans Streaming Service 2020 - 2023",
+    "projectDescription": "As a Senior Front End Developer, I led a team of three developers in building the first VtexIO website for Vans in Mexico from 2020 to 2023. \n\n This project was a significant milestone for the company, as it marked our first foray into using NodeJS services to incorporate House of Vans live streaming service and schedule from their private API. I was responsible for overseeing the development process, ensuring that the site met the client's requirements and adhered to best practices. \n\n The website featured a modern and dynamic design, optimized for performance and user experience. By leveraging VtexIO's capabilities, we were able to deliver a robust e-commerce platform that enhanced Vans' online presence and customer engagement.",
+    "date": "2024",
+    "company": "Ecomsur"
   }
 ]

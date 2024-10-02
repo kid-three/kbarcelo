@@ -1,7 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-
-const BranchingTree = ({ isActive }) => {
+import React, { useRef } from 'react';
+const BranchingTree = ({}) => {
   const svgRef = useRef(null);
 
   // const [hasAnimated, setHasAnimated] = useState(false);

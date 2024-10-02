@@ -1,17 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-
-const Compass = ({ isActive }) => {
+import React, { useRef } from 'react';
+const Compass = ({}) => {
   const svgRef = useRef(null);
-
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  useEffect(() => {
-    if (isActive && !hasAnimated) {
-      gsap.fromTo(svgRef.current, { scale: 0.5 }, { scale: 1, duration: 2 });
-      setHasAnimated(true);
-    }
-  }, [isActive, hasAnimated]);
 
   return (
     <svg

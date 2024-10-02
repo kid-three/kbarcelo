@@ -39,7 +39,7 @@ const ManagerCards = () => {
             width="100%"
             align="center"
           >
-            <BranchingTree isActive={activeIndex === 0} />
+            <BranchingTree />
             <Text
               as="p"
               size={{
@@ -74,7 +74,7 @@ const ManagerCards = () => {
             align="center"
             width="100%"
           >
-            <Compass isActive={activeIndex === 1} />
+            <Compass />
             <Text
               as="p"
               size={{
@@ -110,7 +110,7 @@ const ManagerCards = () => {
             width="100%"
             align="center"
           >
-            <Bridge isActive={activeIndex === 2} />
+            <Bridge />
             <Box>
               <Text
                 as="p"
@@ -148,7 +148,7 @@ const ManagerCards = () => {
             width="100%"
             align="center"
           >
-            <Idea isActive={activeIndex === 3} />
+            <Idea />
             <Text
               as="p"
               size={{
@@ -183,7 +183,7 @@ const ManagerCards = () => {
             width="100%"
             align="center"
           >
-            <Anchor isActive={activeIndex === 4} />
+            <Anchor />
             <Text
               as="p"
               size={{

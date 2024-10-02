@@ -77,7 +77,7 @@ const ProjectsLayout = ({
           handleCheckboxChange={handleCheckboxChange}
         />
       </Flex>
-      <Flex flexGrow="2" justify="center" overflowY="scroll" maxHeight="100%">
+      <Flex flexGrow="2" justify="center" overflowY="visible" maxHeight="100%">
         <ProjectList selectedTags={selectedValues} />
       </Flex>
     </Flex>

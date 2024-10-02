@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Flex, Heading, Box, Text } from '@radix-ui/themes';
+import highlights from '../../../components/about_me/highlights.json';
 
 const page = () => {
   return (
@@ -40,8 +41,10 @@ const page = () => {
               creativity and innovation can thrive.
               <br />
               <br />
-              Outside of work, you'll often find me skateboarding—it's my
-              favorite way to stay active and keep a fresh perspective.
+              Outside of work, you'll often find me spending time with my family
+              or skateboarding. My passion for skateboarding has been with me
+              since I was a kid, and it's my favorite way to stay active and
+              keep a fresh perspective.
             </Text>
           </Box>
         </Box>
@@ -52,13 +55,45 @@ const page = () => {
           initial: 'none',
           lg: 'flex',
         }}
+        overflowX="visible"
+        direction="column"
+        p="8"
       >
-        <Box p="4">
-          <Heading size="4" weight="regular" className="section_title">
-            // code snippets
-          </Heading>
-          <Box mt="3">!</Box>
+        {/* <Box p="4" mx="3" overflowX="scroll"> */}
+        <Heading size="4" weight="regular" className="section_title">
+          // recent highlights
+        </Heading>
+        <Box>
+          <ul>
+            {highlights.map((highlight, index) => (
+              // <Box my="6">
+              //   <Box p="2" className="typewriter_container">
+              //     <Text as="p">
+              //       <span className="variable">"title":</span>
+              //       <span className="property">{highlight.title}</span>
+              //     </Text>
+              //     <Text as="p">
+              //       <span className="variable">"date":</span>
+              //       <span className="property">{highlight.date}</span>
+              //     </Text>
+              //     <Text as="p">
+              //       <span className="variable">"accomplishment":</span>
+              //       <span className="property">{highlight.accomplishment}</span>
+              //     </Text>
+              //   </Box>
+              // </Box>
+
+              <li key={index}>
+                <span className="page_title">
+                  {highlight.title} - {highlight.date}
+                </span>
+                <br />
+                {highlight.accomplishment}
+              </li>
+            ))}
+          </ul>
         </Box>
+        {/* </Box> */}
       </Flex>
     </Flex>
   );

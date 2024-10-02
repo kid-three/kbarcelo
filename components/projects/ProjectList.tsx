@@ -28,6 +28,9 @@ const ProjectList: React.FC<ProjectListProps> = ({ selectedTags }) => {
             projectTitle={project.projectTitle}
             projectDescription={project.projectDescription}
             shortDescription={project.shortDescription}
+            date={project.date}
+            company={project.company}
+            repo={project.repo}
           />
         ))}
       </Grid>

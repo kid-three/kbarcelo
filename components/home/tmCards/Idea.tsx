@@ -1,17 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
+import React, { useRef } from 'react';
+// import { gsap } from 'gsap';
 
-const Idea = ({ isActive }) => {
+const Idea = () => {
   const svgRef = useRef(null);
 
-  const [hasAnimated, setHasAnimated] = useState(false);
+  // const [hasAnimated, setHasAnimated] = useState(false);
 
-  useEffect(() => {
-    if (isActive && !hasAnimated) {
-      gsap.fromTo(svgRef.current, { scale: 0 }, { scale: 1, duration: 2 });
-      setHasAnimated(true);
-    }
-  }, [isActive, hasAnimated]);
+  // useEffect(() => {
+  //   if (isActive && !hasAnimated) {
+  //     gsap.fromTo(svgRef.current, { scale: 0 }, { scale: 1, duration: 2 });
+  //     setHasAnimated(true);
+  //   }
+  // }, [isActive, hasAnimated]);
 
   return (
     <svg

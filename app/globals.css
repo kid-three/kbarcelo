@@ -30,7 +30,7 @@ body {
 }
 
 .main_container {
-  height: 100dvh;
+  /* height: 100dvh; */
 }
 
 .page_container {
@@ -578,4 +578,39 @@ br {
 .tm_card__description {
   font-weight: 100;
   text-align: center;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.video-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-player {
+  /* position: relative;
+  width: 100%; */
+  height: 500px;
+}
+
+@media (max-width: 480px) {
+  .video-player {
+    /* width: 240px; */
+    height: 300px;
+  }
+}
+
+.contact_link {
+  color: #f6f6f6 !important;
+  font-size: 1.5rem;
+}
+
+.me {
+  border-radius: 50%;
 }

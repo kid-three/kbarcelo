@@ -1,17 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-
-const Bridge = ({ isActive }) => {
+import React, { useRef } from 'react';
+const Bridge = ({}) => {
   const svgRef = useRef(null);
 
-  const [hasAnimated, setHasAnimated] = useState(false);
+  // const [hasAnimated, setHasAnimated] = useState(false);
 
-  useEffect(() => {
-    if (isActive && !hasAnimated) {
-      gsap.fromTo(svgRef.current, { scale: 0 }, { scale: 1, duration: 2 });
-      setHasAnimated(true);
-    }
-  }, [isActive, hasAnimated]);
+  // useEffect(() => {
+  //   if (isActive && !hasAnimated) {
+  //     gsap.fromTo(svgRef.current, { scale: 0 }, { scale: 1, duration: 2 });
+  //     setHasAnimated(true);
+  //   }
+  // }, [isActive, hasAnimated]);
 
   return (
     <svg
@@ -19,7 +17,7 @@ const Bridge = ({ isActive }) => {
       id="bridge"
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 806 438"
+      viewBox="0 0 800 500"
       preserveAspectRatio="xMidYMid meet"
     >
       <g

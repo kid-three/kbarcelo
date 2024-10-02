@@ -3,11 +3,13 @@ import Typewriter from '@/components/home/CodeSnippet';
 import CodeSnippet from '@/components/home/CodeSnippet';
 import ManagerCards from '@/components/home/ManagerCards';
 import Sk8 from '@/components/home/Sk8';
+import VideoPlayer from '@/components/home/VideoPlayer';
 // import ImageEffect from "@/components/home/ImageEffect";
 // import Example from "@/components/home/p5";
 // import { LightningBoltIcon } from "@radix-ui/react-icons";
 import { Flex, Text, Button, Container, Box } from '@radix-ui/themes';
 import { motion } from 'framer-motion';
+import { Head } from 'next/document';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { RandomReveal } from 'react-random-reveal';
@@ -206,7 +208,11 @@ export default function Home() {
                 lg: '500px',
               }}
             >
-              <Sk8 />
+              <VideoPlayer
+                thumbnail="/mefly.png"
+                videoSrc="/skateVid.mp4"
+                alt="sk8"
+              />
             </Flex>
           )}
         </Flex>

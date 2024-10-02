@@ -15,7 +15,17 @@
 import { Box } from '@radix-ui/themes';
 import React, { useState, useEffect } from 'react';
 
-const Typewriter = ({ text, typingSpeed = 5, delay = 50000 }) => {
+interface TypewriterProps {
+  text: string;
+  typingSpeed?: number;
+  delay?: number;
+}
+
+const Typewriter = ({
+  text,
+  typingSpeed = 5,
+  delay = 50000,
+}: TypewriterProps) => {
   const [displayedText, setDisplayedText] = useState('');
   const [index, setIndex] = useState(0);
 

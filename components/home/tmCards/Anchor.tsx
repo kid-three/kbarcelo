@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
+import React, { useRef } from 'react';
 
-const Anchor = ({ isActive }) => {
+const Anchor = () => {
   const svgRef = useRef(null);
 
   // const [hasAnimated, setHasAnimated] = useState(false);

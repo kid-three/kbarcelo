@@ -23,6 +23,9 @@ interface ProjectCardProps {
   projectDescription: string;
   projectLink: string;
   shortDescription: string;
+  date: string;
+  company: string;
+  repo?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -32,6 +35,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   projectDescription,
   projectLink,
   shortDescription,
+  date,
+  company,
+  repo,
 }) => {
   return (
     <Dialog.Root>
@@ -100,10 +106,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               width={300}
             />
           </Box>
-          <Text as="p">Year:</Text>
-          <Text as="p">Company:</Text>
+          <Box width="100%">
+            <Text as="p">Year: {date}</Text>
+            <Text as="p">Company:{company}</Text>
+          </Box>
           <Separator my="3" size="4" />
           <Markdown>{projectDescription}</Markdown>
+          <Flex gap="2">
+            <Button asChild color="gray" variant="outline">
+              <a href={projectLink} target="_blank">
+                Visit project
+              </a>
+            </Button>
+            {repo && (
+              <Button asChild variant="outline">
+                <a href={repo} target="_blank">
+                  Visit Repository
+                </a>
+              </Button>
+            )}
+          </Flex>
         </Flex>
       </Dialog.Content>
     </Dialog.Root>

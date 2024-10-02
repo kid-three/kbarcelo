@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Led and managed a diverse team of 50 Front End Developers",
+    "date": "11/22 - 08/24",
+    "accomplishment": "Maintained operations for 60 Ecommerce websites including Pandora (MX, CO, CL, PE, PA), Vans MX, Levis MX, Reebok (CO, CL, PE, PA), Coca-Cola CL."
+  },
+  {
+    "title": "Designed and developed a front end infrastructure management platform",
+    "date": "11/22 - 08/24",
+    "accomplishment": "Created a platform to manage 2400+ repositories, track releases in real-time, and improve code reusability with tools like NextJs, GraphQL, and Strapi."
+  },
+  {
+    "title": "Documented and audited code base",
+    "date": "11/22 - 08/24",
+    "accomplishment": "Led a task force that audited 60% of the code base and increased documentation from 15% to 95% across repositories."
+  },
+  {
+    "title": "Recruited, hired, and trained 20 junior developers",
+    "date": "06/20 - 11/22",
+    "accomplishment": "Built a team to create advanced VtexIO websites, improved project management with JIRA, and developed onboarding processes adopted company-wide."
+  }
+]
