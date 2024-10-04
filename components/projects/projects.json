@@ -1,6 +1,17 @@
 [
   {
-    "tag": ["ReactJS", "VtexIO"],
+    "tag": ["VtexIO", "Front", "TM"],
+    "projectLink": "https://cl.hm.com/",
+    "projectImage": "/projects/HM.png",
+    "projectNumber": 1,
+    "projectTitle": "HM CL/PE/CO/AR/UY",
+    "shortDescription": "Technical Manager for HM ecommerce websites in 5 different countries. Managed all technical communications and specifications with vendors external clients and internal design teams. 2024",
+    "projectDescription": "As a Technical Manager for HM in 5 different countries I was responsible for ensuring all technical aspects of the websites were up to date and functioning correctly. \n\n This included managing a team of developers, overseeing the development process, and dealing directly with multiple stakeholders to ensure the project met the client's requirements. \n\n My role involved coordinating with the design team to implement new features, optimize performance, and ensure the site's security. I also provided technical support and guidance to the development team, ensuring that the project adhered to best practices and industry standards.",
+    "date": "2024",
+    "company": "Infracommerce LatAm"
+  },
+  {
+    "tag": ["ReactJS", "VtexIO", "Front"],
     "projectLink": "https://www.thenorthface.com.mx",
     "projectImage": "/projects/tnf.png",
     "projectNumber": 1,
@@ -11,7 +22,7 @@
     "company": "Ecomsur"
   },
   {
-    "tag": ["ReactJS", "VtexIO"],
+    "tag": ["ReactJS", "VtexIO", "Front", "TL"],
     "projectLink": "https://www.pandoraoficial.com.mx",
     "projectImage": "/projects/pandora.png",
     "projectNumber": 1,
@@ -28,7 +39,10 @@
       "Strapi",
       "MySQL Database",
       "NodeJS",
-      "UI / UX Design"
+      "UI / UX Design",
+      "Front",
+      "Back",
+      "TM"
     ],
     "projectLink": "#",
     "projectImage": "/projects/isma.png",
@@ -41,7 +55,7 @@
     "repo": "https://github.com/kid-three/EKS"
   },
   {
-    "tag": ["ReactJS", "NextJS", "UI / UX Design"],
+    "tag": ["ReactJS", "NextJS", "UI / UX Design", "Front", "Back"],
     "projectLink": "https://isabelgonzalezdbarcelo.com/",
     "projectImage": "/projects/isabel.png",
     "projectNumber": 1,
@@ -53,7 +67,7 @@
     "repo": "https://github.com/kid-three/isabel"
   },
   {
-    "tag": ["ReactJS", "NextJS", "UI / UX Design"],
+    "tag": ["ReactJS", "NextJS", "UI / UX Design", "Front"],
     "projectLink": "https://kbarcelo.com/",
     "projectImage": "/projects/kbarcelo.png",
     "projectNumber": 1,
@@ -65,7 +79,7 @@
     "repo": "https://github.com/kid-three/kbarcelo"
   },
   {
-    "tag": ["ReactJS", "VtexIO", "NodeJS"],
+    "tag": ["ReactJS", "VtexIO", "NodeJS", "Front", "TL", "Back"],
     "projectLink": "https://vans.mx/",
     "projectImage": "/projects/vans.png",
     "projectNumber": 1,
