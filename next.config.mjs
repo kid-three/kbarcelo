@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/kbarcelo',
+  // basePath: '/kbarcelo',
   reactStrictMode: true,
   images: {
     unoptimized: true,
   },
+  distDir: 'build',
 };
 
 export default nextConfig;
