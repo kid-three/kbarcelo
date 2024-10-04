@@ -34,12 +34,14 @@ interface ProjectCheckboxProps {
   value: string;
   checked: boolean;
   onChange: (value: string, checked: boolean) => void;
+  name?: string;
 }
 
 const ProjectCheckbox: React.FC<ProjectCheckboxProps> = ({
   value,
   checked,
   onChange,
+  name,
 }) => {
   const handleChange = () => {
     onChange(value, !checked);
@@ -53,7 +55,7 @@ const ProjectCheckbox: React.FC<ProjectCheckboxProps> = ({
           checked={checked}
           onCheckedChange={handleChange}
         />
-        {value}
+        {name ? name : value}
       </Flex>
     </Text>
   );

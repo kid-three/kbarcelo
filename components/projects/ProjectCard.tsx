@@ -51,9 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <a href="#">
               <Inset clip="padding-box" side="top" pb="current">
                 <Image
-                  src={
-                    `/kbarcelo/${projectImage}` || '/kbarcelo/projects/tnf.png'
-                  }
+                  src={`${projectImage}` || '/projects/tnf.png'}
                   alt="Bold typography"
                   style={{
                     display: 'block',
@@ -95,7 +93,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         >
           <Box maxWidth="500px">
             <Image
-              src={`/kbarcelo/${projectImage}` || '/kbarcelo/projects/tnf.png'}
+              src={`${projectImage}` || '/projects/tnf.png'}
               alt="Bold typography"
               style={{
                 display: 'block',

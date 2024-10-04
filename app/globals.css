@@ -517,7 +517,7 @@ br {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   background-color: black;
   background: linear-gradient(0deg, #011627 0%, rgb(45, 49, 83) 100%);
-  background-image: url('/kbarcelo/meta/env.svg');
+  background-image: url('/meta/env.svg');
   background-size: cover;
   background-position: center;
   /* border: 1px solid #869baf; */

@@ -39,7 +39,7 @@ const ProjectsAccordion: React.FC<ProjectsAccordionProps> = ({
               width={20}
               height={20}
             />
-            <span>projects</span>
+            <span>technologies</span>
           </Accordion.Trigger>
         </Accordion.Header>
         <Accordion.Content className="AccordionContent">
@@ -64,19 +64,56 @@ const ProjectsAccordion: React.FC<ProjectsAccordionProps> = ({
               checked={selectedValues.includes('MySQL Database')}
               onChange={handleCheckboxChange}
             />
+
             <ProjectCheckbox
-              value="Wordpress"
-              checked={selectedValues.includes('Wordpress')}
+              value="VtexIO"
+              checked={selectedValues.includes('VtexIO')}
               onChange={handleCheckboxChange}
+            />
+          </Flex>
+        </Accordion.Content>
+      </Accordion.Item>
+      <Accordion.Item value="item-2">
+        <Accordion.Header className="AccordionHeader">
+          <Accordion.Trigger className="AccordionTrigger">
+            <TriangleRightIcon
+              className="AccordionChevron"
+              aria-hidden
+              width={20}
+              height={20}
+            />
+            <span>skill</span>
+          </Accordion.Trigger>
+        </Accordion.Header>
+        <Accordion.Content className="AccordionContent">
+          <Flex direction="column" gap="2" pl="2" my="2">
+            <ProjectCheckbox
+              value="Front"
+              checked={selectedValues.includes('Front')}
+              onChange={handleCheckboxChange}
+              name="Front-end development"
+            />
+            <ProjectCheckbox
+              value="Back"
+              checked={selectedValues.includes('Back')}
+              onChange={handleCheckboxChange}
+              name="Back-end development"
+            />
+            <ProjectCheckbox
+              value="TL"
+              checked={selectedValues.includes('TL')}
+              onChange={handleCheckboxChange}
+              name="Team Lead"
+            />
+            <ProjectCheckbox
+              value="TM"
+              checked={selectedValues.includes('TM')}
+              onChange={handleCheckboxChange}
+              name="Technical Manager"
             />
             <ProjectCheckbox
               value="UI / UX Design"
               checked={selectedValues.includes('UI / UX Design')}
-              onChange={handleCheckboxChange}
-            />
-            <ProjectCheckbox
-              value="VtexIO"
-              checked={selectedValues.includes('VtexIO')}
               onChange={handleCheckboxChange}
             />
           </Flex>
